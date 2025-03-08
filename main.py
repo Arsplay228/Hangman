@@ -9,5 +9,15 @@ print("Поехали!")
 
 word = "квокка"
 
-for symb in word:
-    print(symb, end = " ")
+letters = []
+
+while True:
+    letter = input("Введите букву: ").lower()
+    letters.append(letter)
+    print(letters)
+    for symb in word:
+        if symb in letters:
+            print(symb, end = " ")
+        else:
+            print("*", end=" ")
+    print()
